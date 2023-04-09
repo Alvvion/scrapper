@@ -1,0 +1,3 @@
+const km = 38000 / Math.pow(2, zoom - 3) * Math.cos(latitude * Math.PI / 180);
+
+This also depends on computer screen but it seems to match well

@@ -1,0 +1,15 @@
+{
+    "extends": "@apify/tsconfig",
+    "compilerOptions": {
+        "module": "ES2022",
+        "target": "ES2022",
+        "outDir": "dist",
+        "noUnusedLocals": false,
+        "lib": ["DOM"],
+        // Turf types are giving us errors, so we have to skip them
+        "skipLibCheck": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+}

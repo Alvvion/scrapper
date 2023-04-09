@@ -1,0 +1,43 @@
+{
+	"actorSpecification": 1,
+	"name": "crawler-google-places",
+	"title": "Google Maps Scraper",
+	"description": "",
+	"version": "1.0",
+	"storages": {
+		"dataset": {
+			"actorSpecification": 1,
+			"title": "Google Places Dataset",
+			"description": "",
+			"views": {
+				"places": {
+					"title": "Overview",
+					"description": "It can take about one minute until the first results are available.",
+					"transformation": {
+						"fields": [
+							"title",
+							"totalScore",
+							"reviewsCount",
+							"street",
+							"city",
+							"state",
+							"countryCode",
+							"website",
+							"phone",
+							"categoryName",
+							"url"
+						]
+					},
+					"display": {
+						"component": "table",
+						"properties": {
+							"title": {
+								"label": "Place name"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
